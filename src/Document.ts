@@ -18,6 +18,9 @@ export default class Document<T> {
             }, content);
         }
     }
+    async delete() {
+        return this.collection.deleteMany({ _id: this.id });
+    }
     async get(): Promise<DocInfo<T>> {
         const { collection } = this;
         const findResult = await collection.findOne({ _id: this.id });

@@ -166,4 +166,8 @@ interface ChangedInfo<T> extends BaseDocInfo {
     async getData<T>(options: FindOneOptions<T extends any ? any : T> = {}) {
         return this.get<T>(options).then(docs => docs.map(doc => doc.data()));
     }
+    async delete<T>() {
+        const filter = this.asFilter<T>();
+        return this.collection.deleteMany(filter);
+    }
 }

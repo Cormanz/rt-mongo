@@ -183,6 +183,15 @@ var Query = /** @class */ (function () {
             });
         });
     };
+    Query.prototype["delete"] = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var filter;
+            return __generator(this, function (_a) {
+                filter = this.asFilter();
+                return [2 /*return*/, this.collection.deleteMany(filter)];
+            });
+        });
+    };
     return Query;
 }());
 exports["default"] = Query;

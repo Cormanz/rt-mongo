@@ -66,6 +66,13 @@ var Document = /** @class */ (function () {
             });
         });
     };
+    Document.prototype["delete"] = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, this.collection.deleteMany({ _id: this.id })];
+            });
+        });
+    };
     Document.prototype.get = function () {
         return __awaiter(this, void 0, void 0, function () {
             var collection, findResult;
