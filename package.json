@@ -1,6 +1,6 @@
 {
   "name": "rt-mongo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A wrapper for MongoDB for Node that mimics the Firebase API closely",
   "main": "index.js",
   "scripts": {

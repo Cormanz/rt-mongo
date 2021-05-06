@@ -10,8 +10,8 @@ export default class Document<T> {
     async set(content: any, opts: DocSetOpts = {}) {
         if (opts.merge) {
             await this.collection.findOneAndUpdate({ 
-                _id: new ObjectId(this.id) 
-            }, content);
+                _id: new ObjectId(this.id),
+            }, { $set: content }, { upsert: true });
         } else {
             await this.collection.findOneAndReplace({ 
                 _id: new ObjectId(this.id) 
