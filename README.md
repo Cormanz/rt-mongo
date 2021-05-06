@@ -15,11 +15,16 @@ You can do the following with `mongo-fire`:
 
 ## Why use mongo-fire?
 
-The `mongo-fire` API is very simple and easy to use, but it's not perfect in all scenarios.
+The `mongo-fire` API is very simple, fast, and easy to use, a plus some alternatives lack.
 
-For making web apps, you should use firestore since it has database rules to prevent your users from accessing specific data
+Personally, I think `mongo-fire` is great for projects like bots for services like discord and guilded and other instances.
 
-However, `mongo-fire` is great for projects like bots for services like discord and guilded and other instances.
+## Alternatives
+
+Although `mongo-fire` is a great tool, it's not the perfect one. Here are some alternatives:
+
+- `quick-mongo` - Quick-mongo also uses MongoDB, but it's a lot more limited. However, it's also very beginner friendly so if you're new to databases and think `mongo-fire` is a little too hard for you, check it out [here](https://quickmongo.js.org/)
+- **Firestore** (Firebase) - For web apps, Firestore, and with it, Firebase, is as good as it gets. It's simple, easy to use, and great for your next web project, even with builtin security rules so no one on your frontend can abuse your database. If you like it, try it out [here](https://firebase.google.com)
 
 ## Quickstart
 
