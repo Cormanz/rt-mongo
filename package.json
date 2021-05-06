@@ -1,0 +1,21 @@
+{
+  "name": "jsmongo",
+  "version": "0.0.1",
+  "description": "A wrapper for MongoDB for Node that mimics the Firebase API closely",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongodb"
+  ],
+  "author": "Corman",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/mongodb": "^3.6.12",
+    "jest": "^26.6.3",
+    "mongodb": "^3.6.6",
+    "ts-node": "^9.1.1"
+  }
+}
