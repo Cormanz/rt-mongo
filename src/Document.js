@@ -51,7 +51,7 @@ var Document = /** @class */ (function () {
                         if (!opts.merge) return [3 /*break*/, 2];
                         return [4 /*yield*/, this.collection.findOneAndUpdate({
                                 _id: new mongodb_1.ObjectId(this.id)
-                            }, content)];
+                            }, { $set: content }, { upsert: true })];
                     case 1:
                         _a.sent();
                         return [3 /*break*/, 4];
