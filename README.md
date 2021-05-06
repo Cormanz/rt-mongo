@@ -70,7 +70,7 @@ main();
 **Getting documents from their ID and getting data, then deleting it.**
 
 ```ts
-import { createClient } from 'rt-mongo-test';
+import { createClient } from 'rt-mongo';
 
 const main = async () => {
     const client = await createClient('mongodb://localhost:27017');
@@ -87,7 +87,7 @@ main();
 **Compound queries**
 
 ```ts
-import { createClient, where } from 'rt-mongo-test';
+import { createClient, where } from 'rt-mongo';
 
 const main = async () => {
     const client = await createClient('mongodb://localhost:27017');
